@@ -1,0 +1,259 @@
+/* Estilo General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor central con el logo y botones */
+.container {
+    text-align: center;
+    margin-top: -100px;
+}
+
+/* Logo centrado */
+.logo {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center; /* Centrar el logo */
+    color: #333; /* Color único para el logo */
+    transition: transform 0.3s ease; /* Efecto suave al pasar el ratón */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efecto de aumento del logo */
+}
+
+/* Estilo de los botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.botones a {
+    padding: 18px 36px; /* Tamaño de botón ajustado */
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333; /* Fondo oscuro para el botón */
+    border-radius: 10px;
+    text-transform: uppercase; /* Para que el texto de los botones sea mayúscula */
+    font-weight: 600; /* Estilo del texto más fuerte */
+    letter-spacing: 1px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra suave para el botón */
+    transition: all 0.3s ease; /* Suavizar la transición */
+}
+
+.botones a:hover {
+    background-color: #555; /* Cambio de fondo al pasar el cursor */
+    transform: translateY(-4px); /* Efecto de elevación */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra más grande */
+}
+
+/* Formulario de login y registro */
+.form-container {
+    background-color: #f8f8f8;
+    border: 2px solid #000;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 1rem;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #333;
+}
+
+.text-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.text-link a {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Estilo de mensaje de error */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* Fondo de la página */
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #000;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar .logo h1 {
+    font-size: 2rem;
+    font-family: 'Georgia', serif; /* Fuente más elegante para el nombre */
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .menu a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Contenido principal */
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Sección de información */
+.info-section h3 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #444;
+}
+
+/* Estilo de los botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.botones a {
+    padding: 18px 36px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.botones a:hover {
+    background-color: #555;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividad: en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .menu {
+        margin-top: 20px;
+    }
+
+    .navbar .menu a {
+        margin: 10px 0;
+    }
+}
+

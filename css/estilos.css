@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* Fondo blanco para un estilo limpio */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Texto principal en color gris oscuro para buena legibilidad */
+}
+
+.contenedor-comentarios {
+    width: 80%;
+    max-width: 900px; /* Máxima anchura para una mejor disposición */
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para crear profundidad */
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #000; /* Línea sutil debajo del título */
+    padding-bottom: 10px;
+}
+
+.form-comentario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.form-comentario input, .form-comentario textarea {
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd; /* Bordes finos para mantener la suavidad */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.form-comentario input:focus, .form-comentario textarea:focus {
+    border-color: #000; /* Color de borde negro al hacer foco */
+    outline: none;
+}
+
+.form-comentario button {
+    padding: 12px;
+    background-color: #000; /* Fondo negro para el botón */
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-comentario button:hover {
+    background-color: #444; /* Sombra más clara en el hover */
+}
+
+.comentarios {
+    margin-top: 50px;
+}
+
+.comentario {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.comentario:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Efecto de sombra en hover */
+}
+
+.comentario p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.comentario small {
+    display: block;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Estilo para el botón de regreso */
+.btn-regreso {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4c4a49;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-regreso:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-regreso:active {
+    transform: scale(1);
+}

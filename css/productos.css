@@ -1,0 +1,115 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Contenedor de productos */
+.contenedor-principal {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+/* Título de la página */
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    color: #111;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1.5s ease-out;
+}
+
+/* Nueva animación suave para el título */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo de la grilla de productos */
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de los productos */
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.producto h2 {
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.producto p {
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Contenedor del botón "Volver al Inicio" */
+.btn-container {
+    position: absolute;
+    top: 20px; /* 20px desde la parte superior */
+    right: 20px; /* 20px desde el borde derecho */
+}
+
+/* Botón "Volver al Inicio" */
+.btn-inicio {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto hover sobre el botón */
+.btn-inicio:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
